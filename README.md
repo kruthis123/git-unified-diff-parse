@@ -37,6 +37,10 @@ for f in files:
 
 Each `DiffHunk` has a `patch` property that renders the full unified diff block (header + prefixed lines), useful as LLM input.
 
+## Example usage
+
+See [examples/README.md](https://github.com/kruthis123/git-unified-diff-parse/blob/main/examples/README.md) for a full walkthrough — including how to run an explorer script against a built-in sample diff, a live `git diff`, or a saved diff file.
+
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/kruthis123/git-unified-diff-parse/blob/main/LICENSE)

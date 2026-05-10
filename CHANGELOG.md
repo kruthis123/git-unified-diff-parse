@@ -15,3 +15,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - `DiffLine` — per-line result with `old_line_number`, `new_line_number`, `content`, `is_addition`, `is_deletion`, `is_context`
 - Support for all git diff variants: added, modified, removed, renamed, copied, binary, files with spaces in their names, and the no-newline-at-end-of-file marker
 - Recursive descent parser architecture: `Tokenizer` → `DiffBuilder` pipeline
+
+## [0.1.1] — 2026-05-10
+
+### Added
+- Enahnced documentation with useful links

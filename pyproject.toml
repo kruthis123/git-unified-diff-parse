@@ -1,0 +1,44 @@
+[project]
+name = "git-unified-diff-parse"
+version = "0.1.0"
+description = "A parser for unified git diff text into structured Python objects"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Kruthi Shiva Kumar", email = "kshivakumar@athenahealth.com" },
+]
+keywords = ["git", "diff", "unified-diff", "parser"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kruthis123/git-unified-diff-parse"
+Repository = "https://github.com/kruthis123/git-unified-diff-parse"
+"Bug Tracker" = "https://github.com/kruthis123/git-unified-diff-parse/issues"
+Changelog = "https://github.com/kruthis123/git-unified-diff-parse/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/git_unified_diff_parse"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
